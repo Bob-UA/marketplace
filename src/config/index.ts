@@ -21,23 +21,23 @@ export const PRODUCT_CATEGORIES = [
     ],
   },
   {
-    label: "UI Kits",
-    value: "ui_kits" as const,
+    label: "Icons",
+    value: "icons" as const,
     featured: [
       {
-        name: "Editor picks",
+        name: "Favorite Icons Picks",
         href: "#",
-        imageSrc: "/nav/ui-kits/mixed.jpg",
+        imageSrc: "/nav/icons/picks.jpg",
       },
       {
         name: "New Arrivals",
         href: "#",
-        imageSrc: "/nav/ui-kits/blue.jpg",
+        imageSrc: "/nav/icons/new.jpg",
       },
       {
-        name: "Bestsellers",
+        name: "Bestselling Icons",
         href: "#",
-        imageSrc: "/nav/ui-kits/purple.jpg",
+        imageSrc: "/nav/icons/bestsellers.jpg",
       },
     ],
   },
