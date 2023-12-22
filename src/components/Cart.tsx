@@ -62,9 +62,15 @@ const Cart = () => {
             </>
           ) : (
                 <div className="flex h-full flex-col items-center justify-center space-y-1">
-                    <div className="relative mb-4 w-60 h-60 text-muted-foreground">
-                        <Image src="/hippo-empty-cart.png" fill alt="empty shopping cart hippo"/>
-                    </div>
+                <div className="relative mb-4 w-60 h-60 text-muted-foreground">
+                    <Image src="/hippo-empty-cart.png" fill alt="empty shopping cart hippo"/>
+                </div>
+                <div className="text-xl font-semibold">Your cart is empty</div>
+                    <Link href="/products" className={buttonVariants({
+                        variant: "link",
+                        size: "sm",
+                        className:"text-sm text-muted-foreground"
+                })}>Add items to your cart to checkout</Link>
             </div>
           )}
         </SheetContent>
