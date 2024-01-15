@@ -2,10 +2,16 @@ import { CollectionConfig } from "payload/types";
 
 export const Users: CollectionConfig = {
     slug: 'users',
-    auth: true,
+    auth: {
+        verify: {
+            generateEmailHTML: ({ token }) => {
+                return `<a href='${process.env.NEXT_PUBLIC_SERVER_URL}/verify-email?token=${token}'>Verify account</a>`
+            }
+        }
+    },
     access: {
         read: () => true,
-        create: ()=> true,
+        create: () => true,
     },
     fields: [
         {
@@ -17,6 +23,6 @@ export const Users: CollectionConfig = {
                 { label: 'Admin', value: 'admin' },
                 {label: 'User', value:'user'},
             ]
-        }
+        },
     ]
 }
