@@ -2,7 +2,7 @@
     "extends":"./tsconfig.json",
     "compilerOptions": {
         "module": "CommonJS",
-        "outDir": "Dist",
+        "outDir": "dist",
         "noEmit": false,
         "jsx": "react"
     },
