@@ -1,5 +1,5 @@
 import { User } from "../payload-types";
-import { CollectionConfig } from "payload/types";
+import { Access, CollectionConfig } from "payload/types";
 
 const isAdminOrHasAccessToImages =
   (): Access =>
